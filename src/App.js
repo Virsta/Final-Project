@@ -24,7 +24,11 @@ const router = createBrowserRouter([
     path: "/WallPapers",
     element: <WallPapers />,
   },
-]);
+],
+  {
+    basename: "/final_project",
+  }
+);
 
 
 const App = () => {
