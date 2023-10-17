@@ -1,0 +1,52 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+}
+
+.allImageList {
+  margin: 20px 50px 100px;
+
+  @media screen and (max-width: 376px) {
+    margin: 20px 20px;
+  }
+}
+
+.list__img{
+  position: relative;
+  cursor: zoom-in;
+
+  &:hover .iconZoom {
+    opacity: 1;
+    color: #fff;
+    transition: opacity 300ms ease-in;
+  }
+}
+
+.img--hover:hover .backDrop {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+  }
+
+.backDrop {
+  opacity: 0;
+  cursor: zoom-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(62, 60, 60, 0.619);
+  backdrop-filter: blur(1px);
+}
+
+.iconZoom {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
