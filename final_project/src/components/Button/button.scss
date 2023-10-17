@@ -1,0 +1,31 @@
+@use '../../styles/variables' as *;
+
+.button {
+  font-size: 16px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: $secondary-color;
+  border-radius: 4px;
+  border: none;
+  font-family: $main-font-family;
+
+  &--secondary {
+    color: #000;
+    background-color: rgb(134, 178, 241);
+  }
+
+  &:hover {
+    background-color: lighten($color: $secondary-color, $amount: 15);
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 376px) {
+    font-size: 15px;
+    padding: 5px 0;
+  }
+
+  &--dark {
+    background: lighten($color: $secondary-color, $amount: 15);
+  }
+}
